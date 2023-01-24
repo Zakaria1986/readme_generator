@@ -27,7 +27,7 @@ const questions = [{
 },
 {
     type: 'input',
-    name: 'Contributin',
+    name: 'Contributing',
     message: 'Contributing Guidelines:'
 },
 {
@@ -39,7 +39,7 @@ const questions = [{
     type: 'list',
     name: 'License',
     message: 'License?',
-    choices:['No license', 'MIT', 'ISC']
+    choices:['No license', 'MIT', 'GNU GPLv3']
 }
 ];
 
@@ -50,9 +50,10 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     return inquirer.prompt(questions)
-    .then((answers) => {
-        console.log(answers)
-        return answers
+    .then((data) => {
+        const markdown = generateMarkdown(data)
+        console.log(markdown)
+        return data
     })
     .catch((err) => {
         console.log(err)
