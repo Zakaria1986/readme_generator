@@ -43,18 +43,21 @@ const questions = [{
 }
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 function init() {
     return inquirer.prompt(questions)
     .then((data) => {
         const markdown = generateMarkdown(data)
-        console.log(markdown)
-        return data
-    })
+
+        fs.writeFile('Readme.md', markdown, function (err) {
+            if (err) {
+                console.log('File could not be saved', err)
+            } else {
+                console.log('Your file was saved!')
+            }
+        })
+        })
     .catch((err) => {
         console.log(err)
     })
