@@ -1,5 +1,5 @@
 
-  # tvi
+  # README Generator
 
   ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -13,23 +13,23 @@
   - [Questions](#Questions)
 
   ## Installation
-  tvi
+  You can access the app through the terminal on VS code or similar text editor
 
   ## Usage
-  tvi
+  Access the terminal on VS code to start the app. When prompted, enter your project details and a readme file will be created.
 
   ## License
   MIT
 
   ## Contributing
-  tvi
+  n/a
 
   ## Tests
-  tvi
+  n/a
 
   ## Questions
-  For additional questions, please contact us at tvi@yahoo.es
+  For additional questions, please contact us at jcarlos@hotmail.co.uk
   
 
-  https://github.com/jcarlos8/readme_generator
+  https://github.com/jcarlos8
 
