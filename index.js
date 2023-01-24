@@ -36,10 +36,20 @@ const questions = [{
     message: 'Test Instructions:'
 },
 {
+    type: 'input',
+    name: 'Email',
+    message: 'Email:'
+},
+{
+    type: 'input',
+    name: 'Github',
+    message: 'Github:'
+},
+{
     type: 'list',
     name: 'License',
     message: 'License?',
-    choices:['No license', 'MIT', 'GNU GPLv3']
+    choices:['No license', 'MIT', 'GNUGPLv3', 'ISC']
 }
 ];
 
@@ -54,7 +64,7 @@ function init() {
             if (err) {
                 console.log('File could not be saved', err)
             } else {
-                console.log('Your file was saved!')
+                console.log('Awesome! Your readme file was created!')
             }
         })
         })
